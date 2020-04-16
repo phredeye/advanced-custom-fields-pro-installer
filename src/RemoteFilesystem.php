@@ -1,4 +1,4 @@
-<?php namespace PhilippBaschke\ACFProInstaller;
+<?php namespace Phredeye\ACFProInstaller;
 
 use Composer\Config;
 use Composer\IO\IOInterface;

@@ -1,9 +1,13 @@
 {
-  "name": "philippbaschke/acf-pro-installer",
+  "name": "phredeye/acf-pro-installer",
   "description": "An install helper for Advanced Custom Fields PRO",
   "type": "composer-plugin",
   "license": "MIT",
   "authors": [
+    {
+      "name": "Fred Isaacs",
+      "email": "fred.isaacs@gmail.com"
+    },
     {
       "name": "Philipp Baschke",
       "email": "philipp@baschke.com"
@@ -15,19 +19,19 @@
   "require": {
     "php": ">=5.5",
     "composer-plugin-api": "^1.0",
-    "vlucas/phpdotenv": "^2.2"
+    "vlucas/phpdotenv": "^4.1.4"
   },
   "require-dev": {
     "composer/composer": "1.0.*",
     "phpunit/phpunit": "4.8.*",
     "squizlabs/php_codesniffer": "2.*",
-    "satooshi/php-coveralls": "1.*"
+    "php-coveralls/php-coveralls": "2.1.*"
   },
   "autoload": {
-    "psr-4": { "PhilippBaschke\\ACFProInstaller\\": "src/ACFProInstaller" }
+    "psr-4": { "Phredeye\\ACFProInstaller\\": "src/" }
   },
   "extra": {
-    "class": "PhilippBaschke\\ACFProInstaller\\Plugin"
+    "class": "Phredeye\\ACFProInstaller\\Plugin"
   },
   "scripts": {
     "lint": "phpcs src tests --standard=PSR2",
